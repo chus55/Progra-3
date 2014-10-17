@@ -52,6 +52,8 @@ int main( int argc, char* args[] )
             }
             if(Event.type == SDL_KEYDOWN)
             {
+
+                //Agregue las teclas wasd para los movimientos, ademas de limitar al jugador a 468 y 218 pixeles de movimiento en x y y
                     if(Event.key.keysym.sym == SDLK_d && rect_character.x<500-32)
                     rect_character.x++;
                     if(Event.key.keysym.sym == SDLK_a && rect_character.x>0)
